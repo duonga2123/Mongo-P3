@@ -1,0 +1,16 @@
+const mongoose = require("mongoose");
+
+const NhanVienSchema = new mongoose.Schema({
+maNV: {
+    type: String
+},
+tenNV: {
+    type: String
+},
+luong:{
+    type:Number
+}
+});
+const NhanVienModel = mongoose.model("nhanviens", NhanVienSchema);
+
+module.exports = NhanVienModel;
